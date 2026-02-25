@@ -27,6 +27,62 @@ main {
     column-gap: 5px;
 }
 
+#menu {
+    display: none;
+}
+
+.menu-opciones  {
+    margin-left: -250px;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 50%;
+    bottom: 5%;
+    background-image: url(../IMG/menu.png);
+    background-size: contain;
+    width: 129pt;
+    height: 242pt;
+    z-index: 5;
+}
+
+.menu-opciones a {
+text-decoration: none;
+color: #384059;
+}
+
+
+#menu:checked ~.menu-opciones {
+    margin-left: 3px;
+}
+
+
+/* PLACEHOLDERS */
+
+.uno {
+    margin-top: -80pt;
+    margin-left: -10pt;
+    background-color: black;
+    height: 40vh;
+    width: 100vw;
+    grid-column: 1/4;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.dos {
+    margin-top: -120pt;
+    width: 100vw;
+    margin-left: -10pt;
+    background-color: blue;
+    height: 40vh;
+    grid-column: 1/4;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+/* Cuando haga las imágenes se reemplazarán por las imágenes correspondientes */
 
 img {
     width: 100%;
@@ -76,9 +132,11 @@ p {
 }
 
 .barra img {
+    position: relative;
+    left: 0%;
     width: 10%;
     margin-top: 30pt;
-    margin-left: 10pt;
+    margin-left: 0pt;
 }
 
 .p1 {
@@ -104,6 +162,14 @@ p {
     display: block;
     align-content: center;
     z-index: 2;
+}
+
+.p3h1 {
+    margin-left: 85pt;
+    margin-top: 50pt;
+    color: #E6FFFF;
+    margin-left: 35vw;
+
 }
 
 .p4 {
@@ -176,15 +242,7 @@ p {
     position: absolute;
 }
 
-.navmenu {
-    position: relative;
-    background-image: url(../IMG/menu.png);
-    background-size: contain;
-    width: 130pt;
-    height: 245pt;
-    margin: 0%;
-    margin-top: -50px;
-}
+
 
 .btn-dudas {
     width: 30vw;
@@ -247,7 +305,7 @@ footer img {
     font-family: Roundex;
 }
 
-   main {  
+   main {
     margin: 0%;
     margin-left: -20px;
     width: 100vw;
@@ -283,8 +341,7 @@ footer img {
 .p1 {
     background-image: url(../IMG/iniciofondo1.png);
     height: 40vh;
-    width: 110vw;
-    margin-left: 10ptpt;
+    width: 101vw;
     background-size: contain;
     position: absolute;
     display: block;
@@ -295,8 +352,7 @@ footer img {
 .p2 {
     background-image: url(../IMG/iniciofondo2.png);
     height: 80vh;
-    width: 110vw;
-    margin-left: -15pt;
+    width: 101vw;
     margin-top: 0%;
     background-size: contain;
     position: absolute;
@@ -322,8 +378,8 @@ footer img {
 }
 
 .post {
-    margin-left: 15pt;
-    position: relative;
+    position: absolute;
+    margin-left: 50pt;
     width: 30vw;
     background-color: #E6FFFF;
     height: 200pt;
@@ -331,6 +387,19 @@ footer img {
     display: grid;
     box-shadow: 10px 10px 0px 1px #b91919;
 
+}
+
+.p3h1{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin-top: 75pt;
+    margin-left: 35vw;
+    color: #E6FFFF
+}
+
+#nov2 {
+    margin-left: 350pt;
 }
 
 .rrss-ima {
@@ -347,9 +416,9 @@ footer {
     margin-left: -100vw;
     background-color: #FA78B6;
     width: 100vw;
-    height: 200pt;
+    height: 220pt;
     position: relative;
-    top: 875pt;
+    top: 865pt;
     display: flex;
 
 }
@@ -367,6 +436,20 @@ footer img {
     width: 40vw;
     height: 45vh;
 }
-   
 
+.btn-dudas {
+    margin-left: 10vw;
+}
+
+.uno {
+    position: relative;
+    top:40vh;
+    height: 45vh;
+}
+
+.dos {
+    position: relative;
+    top:120vh;
+    height: 60vh;
+}
 }
