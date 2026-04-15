@@ -27,6 +27,62 @@ main {
     column-gap: 5px;
 }
 
+#menu {
+    display: none;
+}
+
+.menu-opciones  {
+    margin-left: -250px;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 50%;
+    bottom: 5%;
+    background-image: url(../IMG/menu.png);
+    background-size: contain;
+    width: 129pt;
+    height: 242pt;
+    z-index: 5;
+}
+
+.menu-opciones a {
+text-decoration: none;
+color: #384059;
+}
+
+
+#menu:checked ~.menu-opciones {
+    margin-left: 3px;
+}
+
+
+/* PLACEHOLDERS */
+
+.uno {
+    margin-top: -80pt;
+    margin-left: -10pt;
+    background-color: black;
+    height: 40vh;
+    width: 100vw;
+    grid-column: 1/4;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.dos {
+    margin-top: -120pt;
+    width: 100vw;
+    margin-left: -10pt;
+    background-color: blue;
+    height: 40vh;
+    grid-column: 1/4;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+/* Cuando haga las imágenes se reemplazarán por las imágenes correspondientes */
 
 img {
     width: 100%;
@@ -76,12 +132,13 @@ p {
 }
 
 .barra img {
+    position: relative;
+    left: 0%;
     width: 10%;
     margin-top: 30pt;
-    margin-left: 10pt;
+    margin-left: 0pt;
 }
 
-/* INICIO PÁGINAS  */
 .p1 {
     background-image: url(../IMG/iniciofondo1.png);
     height: 40vh;
@@ -93,19 +150,6 @@ p {
     align-content: center;
     z-index: 2;
 }
-.hist1 {
-    background-color: #bddcff;
-    height: 40vh;
-    width: 100vw;
-    margin-left: -15pt;
-    background-size: contain;
-    position: relative;
-    display: block;
-    align-content: center;
-    z-index: 2;
-}
-
-/* SEGUNDA PARTE PÁGINAS  */
 
 .p2 {
     background-image: url(../IMG/iniciofondo2.png);
@@ -119,82 +163,27 @@ p {
     align-content: center;
     z-index: 2;
 }
-.hist2 {
-    background-color: #9dc9ff;
-    height: 120vh;
-    width: 100vw;
+
+.p3h1 {
+    margin-left: 85pt;
+    margin-top: 50pt;
+    color: #E6FFFF;
+    margin-left: 35vw;
+
+}
+
+.p4 {
+    background-color: #cff0ff;
+    height: 30vh;
+    width: 96vw;
+    margin-left: -21pt;
     margin-top: 0%;
     background-size: contain;
     position: relative;
-    right:20pt;
     display: block;
     align-content: center;
     z-index: 2;
-}
-
-
-
-.rby {
-    background-color: #bddcff;
-    border-radius: 10pt;
-    background-blend-mode: screen;
-    position: relative;
-    margin: 15pt;
-    padding: 20pt;
-    padding-left: 10pt;
-    width: 65vw;
-    height: 40vh;
-}
-
-.rby img {
-    width: 225pt;
-    position: relative;
-    left: -30pt;
-    bottom: 5pt;
-
-}
-.sty {
-    background-color: #bddcff;
-    border-radius: 10pt;
-    background-blend-mode: screen;
-    position: relative;
-    left:25vw;
-    margin: 15pt;
-    padding: 20pt;
-    padding-left: 10pt;
-    width: 65vw;
-    height: 40vh;
-}
-
-.sty img {
-    width: 225pt;
-    position: relative;
-    right: -30vw;
-    bottom: 5pt;
-}
-
-
-/* TEXTOS */
-
-.rby p {
-    font-size: 0.9em;
-    z-index: 2;
-    width: 40%;
-    position: relative;
-    left: 120pt;
-    bottom: 250pt;
-    text-align: right;
-    color: #384059;
-}
-.sty p {
-    font-size: 0.9em;
-    z-index: 2;
-    width: 40%;
-    position: relative;
-    right: 50pt;
-    bottom:250pt;
-    text-align: right;
-    color: #384059;
+    border: solid 10px #9dc9ff;
 }
 
 .inicio p {
@@ -206,35 +195,11 @@ p {
 .p1 h1 {
     margin-top: -75pt;
 }
-.hist1 h1 {
-    margin-top: 50pt;
-}
 
 .p2 h1 {
     margin-top: -175pt;
 
 }
-
-.post a {
-    color: #FA78B6;
-    margin: 0%;
-    text-align: center;
-    text-decoration: underline;
-}
-.post h1 {
-    margin: 0%;
-    font-size: 15pt;
-    text-align: center;
-    padding: 10pt;
-    padding-bottom: 5pt;
-}
-
-.btn-dudas a {
-    text-decoration: none;
-    color: #384059;
-    font-size: 15pt;
-}
-
 
 .post {
     margin-left: 15pt;
@@ -256,41 +221,28 @@ p {
     position: relative;
 }
 
+.post h1 {
+    margin: 0%;
+    font-size: 15pt;
+    text-align: center;
+    padding: 10pt;
+    padding-bottom: 5pt;
+}
+
+.post a {
+    color: #FA78B6;
+    margin: 0%;
+    text-align: center;
+    text-decoration: underline;
+}
+
 #nov2 {
     grid-column: 1/2;
     margin-left: 160pt;
     position: absolute;
 }
 
-.navmenu {
-    position: relative;
-    background-image: url(../IMG/menu.png);
-    background-size: contain;
-    width: 130pt;
-    height: 245pt;
-    margin: 0%;
-    margin-top: -50px;
-}
 
-/* FOOTER */
-
-.p4 {
-    background-color: #cff0ff;
-    height: 30vh;
-    width: 96vw;
-    margin-left: -21pt;
-    margin-top: 0%;
-    background-size: contain;
-    position: relative;
-    display: block;
-    align-content: center;
-    z-index: 2;
-    border: solid 10px #9dc9ff;
-}
-
-.dudas {
-    display: flex;
-}
 
 .btn-dudas {
     width: 30vw;
@@ -302,6 +254,15 @@ p {
     box-shadow: 10px 10px 0px 1px #9dc9ff;
 }
 
+.btn-dudas a {
+    text-decoration: none;
+    color: #384059;
+    font-size: 15pt;
+}
+
+.dudas {
+    display: flex;
+}
 
 footer {
     padding: 20pt;
@@ -311,7 +272,7 @@ footer {
     background-color: #FA78B6;
     width: 90vw;
     height: 100pt;
-    position: absolute;
+    position: relative;
     display: flex;
 
 }
@@ -333,80 +294,6 @@ footer img {
     color: #384059;
 }
 
-.ftrh {
-    margin-right: 40pt;
-    width: 200pt;
-    height: 100pt;
-}
-
-.ftrh a {
-    text-decoration: underline;
-    color: #384059;
-}
-
-.p4h {
-    background-color: #cff0ff;
-    height: 30vh;
-    width: 100vw;
-    margin-left: -105vw;
-    margin-top: 120vh;
-    background-size: contain;
-    position: relative;
-    display: block;
-    align-content: center;
-    z-index: 3;
-    border: solid 10px #9dc9ff;
-}
-
-.dudash {
-    display: flex;
-    position: relative;
-    left:50pt;
-}
-
-.btn-dudas {
-    width: 30vw;
-    text-align: center;
-    border: solid 3px #384059;
-    background-color: #E6FFFF;
-    padding: 20px;
-    margin-left: 15pt;
-    box-shadow: 10px 10px 0px 1px #9dc9ff;
-}
-
-
-footer {
-    padding: 20pt;
-    padding-top: 90pt;
-    margin-left: -360pt;
-    margin-top: 170pt;
-    background-color: #FA78B6;
-    width: 90vw;
-    height: 100pt;
-    position: relative;
-    display: flex;
-    
-
-}
-.hfoot {
-    padding: 20pt;
-    padding-top: 90pt;
-    margin-left: -370pt;
-    margin-top: 150vh;
-    background-color: #FA78B6;
-    width: 90vw;
-    height: 100pt;
-    position: relative;
-    display: flex;
-    
-}
-
-footer img {
-    position: absolute;
-    width: 40%;
-    margin-top: -60pt;
-}
-
 @media screen and (min-width: 768px) {
 
     body {
@@ -418,7 +305,7 @@ footer img {
     font-family: Roundex;
 }
 
-   main {  
+   main {
     margin: 0%;
     margin-left: -20px;
     width: 100vw;
@@ -454,8 +341,7 @@ footer img {
 .p1 {
     background-image: url(../IMG/iniciofondo1.png);
     height: 40vh;
-    width: 110vw;
-    margin-left: 10ptpt;
+    width: 101vw;
     background-size: contain;
     position: absolute;
     display: block;
@@ -466,8 +352,7 @@ footer img {
 .p2 {
     background-image: url(../IMG/iniciofondo2.png);
     height: 80vh;
-    width: 110vw;
-    margin-left: -15pt;
+    width: 101vw;
     margin-top: 0%;
     background-size: contain;
     position: absolute;
@@ -493,8 +378,8 @@ footer img {
 }
 
 .post {
-    margin-left: 15pt;
-    position: relative;
+    position: absolute;
+    margin-left: 50pt;
     width: 30vw;
     background-color: #E6FFFF;
     height: 200pt;
@@ -502,6 +387,19 @@ footer img {
     display: grid;
     box-shadow: 10px 10px 0px 1px #b91919;
 
+}
+
+.p3h1{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin-top: 75pt;
+    margin-left: 35vw;
+    color: #E6FFFF
+}
+
+#nov2 {
+    margin-left: 350pt;
 }
 
 .rrss-ima {
@@ -518,9 +416,9 @@ footer {
     margin-left: -100vw;
     background-color: #FA78B6;
     width: 100vw;
-    height: 200pt;
+    height: 220pt;
     position: relative;
-    top: 875pt;
+    top: 865pt;
     display: flex;
 
 }
@@ -538,6 +436,20 @@ footer img {
     width: 40vw;
     height: 45vh;
 }
-   
 
+.btn-dudas {
+    margin-left: 10vw;
+}
+
+.uno {
+    position: relative;
+    top:40vh;
+    height: 45vh;
+}
+
+.dos {
+    position: relative;
+    top:120vh;
+    height: 60vh;
+}
 }
