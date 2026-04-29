@@ -19,6 +19,33 @@ body {
     src: url(../FNT/Roundex.otf) format("opentype");
 }
 
+.opciones {
+    position: fixed;
+    display: flex;
+    left: 0%;
+    top: 50pt;
+    width: 120vw;
+    height: 6vh;
+    margin: 0%;
+    background-color: #9dc9ff;
+    z-index: 5;
+}
+
+.opciones a {
+    margin-left: 30pt;
+    margin-bottom: 10pt;
+    margin-top: 10pt;
+    color: #384059;
+}
+
+.opciones a:hover {
+    color: #E6FFFF;
+}
+
+#iniop {
+    background-color: #FA78B6;
+}
+
 main {
     width: 100vw;
     margin-top: 10pt;
@@ -63,23 +90,17 @@ p {
     grid-column: 1/4;
     background-color: #FA78B6;
     margin: -15pt;
-    display: flexbox;
-    position: sticky;
-    top: 0px;
+    position: fixed;
     z-index: 5;
 }
 
 .barra h1 {
-    margin-top: -25pt;
-    margin-left: 15%;
+    position: relative;
+    top: 10pt;
+    margin-left: 10%;
     text-align: left;
 }
 
-.barra img {
-    width: 10%;
-    margin-top: 30pt;
-    margin-left: 10pt;
-}
 
 /* INICIO PÁGINAS  */
 .p1 {
@@ -97,7 +118,7 @@ p {
     background-color: #bddcff;
     height: 40vh;
     width: 100vw;
-    margin-left: -15pt;
+    margin-left: -10pt;
     background-size: contain;
     position: relative;
     display: block;
@@ -115,21 +136,19 @@ p {
     margin-top: 0%;
     background-size: contain;
     position: relative;
-    display: block;
-    align-content: center;
     z-index: 2;
 }
 .hist2 {
     background-color: #9dc9ff;
     height: 120vh;
     width: 100vw;
-    margin-top: 0%;
-    background-size: contain;
+    margin-top: 40vh;
     position: relative;
-    right:20pt;
+    left:-955pt;
     display: block;
     align-content: center;
     z-index: 2;
+    
 }
 
 
@@ -221,10 +240,44 @@ p {
     text-align: center;
     text-decoration: underline;
 }
+#nov2 a {
+    color: #FA78B6;
+    margin: 0%;
+    margin-left: 40pt;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.post:hover {
+    transform: scale(1.05);
+}
+
+.post a:hover {
+    color: blue;
+}
+#nov2 a:hover {
+    color: blue;
+}
+
+#nov2 {
+    width: 50vw;
+    position: absolute;
+    left: 120pt;
+    top: 47pt;
+}
+
 .post h1 {
     margin: 0%;
     font-size: 15pt;
     text-align: center;
+    padding: 10pt;
+    padding-bottom: 5pt;
+}
+#nov2 h1 {
+    margin: 0%;
+    margin-left: 30pt;
+    font-size: 15pt;
+    text-align: left;
     padding: 10pt;
     padding-bottom: 5pt;
 }
@@ -237,13 +290,13 @@ p {
 
 
 .post {
-    margin-left: 15pt;
-    position: absolute;
+    margin-left: 30pt;
+    position: sticky;
+    left: 10vw;
     width: 40vw;
     background-color: #E6FFFF;
     height: 180pt;
     align-content: center;
-    display: grid;
     box-shadow: 10px 10px 0px 1px #b91919;
 
 }
@@ -257,7 +310,6 @@ p {
 }
 
 #nov2 {
-    grid-column: 1/2;
     margin-left: 160pt;
     position: absolute;
 }
@@ -306,13 +358,13 @@ p {
 footer {
     padding: 20pt;
     padding-top: 90pt;
-    margin-left: -360pt;
-    margin-top: 170pt;
     background-color: #FA78B6;
-    width: 90vw;
+    width: 100vw;
     height: 100pt;
-    position: absolute;
+    position: relative;
+    left: -955pt;
     display: flex;
+    margin-top: 130pt;
 
 }
 
@@ -323,7 +375,7 @@ footer img {
 }
 
 .ftr {
-    margin-right: 40pt;
+    position: relative;
     width: 100pt;
     height: 100pt;
 }
@@ -333,25 +385,14 @@ footer img {
     color: #384059;
 }
 
-.ftrh {
-    margin-right: 40pt;
-    width: 200pt;
-    height: 100pt;
-}
-
-.ftrh a {
-    text-decoration: underline;
-    color: #384059;
-}
 
 .p4h {
     background-color: #cff0ff;
     height: 30vh;
-    width: 100vw;
-    margin-left: -105vw;
-    margin-top: 120vh;
-    background-size: contain;
-    position: relative;
+    width: 105vw;
+    margin-top: 1050pt;
+    margin-left: -6pt;
+    position: absolute;
     display: block;
     align-content: center;
     z-index: 3;
@@ -374,38 +415,11 @@ footer img {
     box-shadow: 10px 10px 0px 1px #9dc9ff;
 }
 
-
-footer {
-    padding: 20pt;
-    padding-top: 90pt;
-    margin-left: -360pt;
-    margin-top: 170pt;
-    background-color: #FA78B6;
-    width: 90vw;
-    height: 100pt;
-    position: relative;
-    display: flex;
-    
-
-}
-.hfoot {
-    padding: 20pt;
-    padding-top: 90pt;
-    margin-left: -370pt;
-    margin-top: 150vh;
-    background-color: #FA78B6;
-    width: 90vw;
-    height: 100pt;
-    position: relative;
-    display: flex;
-    
+.btn-dudas:hover {
+    transform: scale(1.05);
 }
 
-footer img {
-    position: absolute;
-    width: 40%;
-    margin-top: -60pt;
-}
+
 
 @media screen and (min-width: 768px) {
 
