@@ -1,0 +1,205 @@
+.prod-v {
+margin-top: 40pt;
+margin-bottom: -40pt;
+display: flex;
+width: 90vw;
+height: 50vh;
+align-self: center;
+padding: 5pt;
+bottom: 200vh;
+
+}
+
+.prod-h {
+    display: block;
+    margin-left: -6vw;
+    width: 110vw;
+    height: 200vh;
+    margin-top: 50pt;
+
+} 
+
+
+.imaG {
+    width: 40%;
+    background-color: #def2ff;
+    border-radius: 5%;
+}
+
+.grande h1 {
+    text-align: left;
+}
+
+
+
+.prod-v h2 {
+text-align: center;
+    font-size: 1.4em;
+}
+
+.titulosab {
+    position: relative;
+    text-align: left;
+    top: 90pt;
+    z-index: 10;
+    margin-bottom: 50pt;
+    margin-left: 20pt;
+}
+
+.prod-v img {
+    width: 25vw;
+}
+.prod-v video {
+    width: 25vw;
+}
+
+.minip a {
+    text-decoration: none;
+    color: #384059;
+}
+
+.minip {
+    display: flexbox;
+    margin: 10pt;
+    width: 150pt;
+    height: 170pt;
+    background-color: #daecff;
+    border-radius: 5%;
+    padding:20pt;
+    
+}
+
+.minip:hover {
+    background-color: #bddcff;
+    transform: scale(1.05);
+}
+
+#d-prod {
+    top: -130pt;
+    left: -1pt;
+}
+
+.banner-grande {
+    width: 70vw;
+    height: 10vh;
+}
+.banner-grande img {
+    position: relative;
+    width: 50px;
+    left: 35vw;
+    top: -50pt
+}
+
+
+.grande {
+    width: 80vw;
+    height: 60vh;
+    text-align: left;
+    align-content: center;
+    padding: 20pt;
+    margin:55pt;
+    border: solid;
+    border-width: 2pt;
+    border-radius: 5%;
+    margin-bottom: 50pt;
+}
+
+.grande p{
+    display: block;
+    padding: 10px;
+    position: relative;
+    bottom: 38vh;
+    left: 27vw;
+    text-align: left;
+    width: 45%;
+}
+
+
+
+
+
+@media screen and (min-width: 770px) {
+
+    .imaG {
+    width: 25%;
+    background-color: #def2ff;
+    border-radius: 5%;
+}
+
+
+
+.titulosab {
+    top: 70pt;
+    z-index: 2;
+}
+
+.prod-v {
+position: relative;
+top: 1vh ;
+bottom: 80vh;
+margin-top: 15pt;
+display: inline;
+width: 22vw;
+height: 50vh;
+margin-left: 1pt;
+
+}
+
+.minip {
+    margin: 10pt;
+    margin-left: 20pt;
+    width: 15vw;
+    height: 30vh;
+    background-color: #daecff;
+    border-radius: 5%;
+    padding:20pt;
+    padding-bottom: 25pt;
+    padding-top: 5pt ;
+    align-content: center;
+    
+    
+}
+
+.prod-v h2 {
+    position: relative;
+    text-align: left;
+    top: 0pt;
+    margin-bottom: 75pt;
+    text-align: center;
+    
+}
+
+.prod-v img {
+    width: 10vw;
+    border-radius: 10%;
+}
+.prod-v video {
+    width: 10vw;
+    border-radius: 10%;
+}
+
+    .banner-grande {
+    width: 70vw;
+    height: 10vh;
+}
+.banner-grande img {
+    position: relative;
+    width: 50px;
+    left: 25vw;
+    top: -50pt
+}
+
+    .grande {
+    position: relative;
+    top: 100vh;
+    width: 75vw;
+    height: 60vh;
+    text-align: left;
+    align-content: center;
+    padding: 20pt;
+    margin:5pt;
+    margin-bottom: 50pt;
+    border-width: 2pt;
+    border-radius: 30pt;
+}
+}

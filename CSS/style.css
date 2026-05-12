@@ -46,6 +46,11 @@ body {
     background-color: #FA78B6;
 }
 
+body {
+    margin: 0%;
+    height: 500vh;
+}
+
 main {
     width: 100vw;
     margin-top: 10pt;
@@ -86,6 +91,7 @@ p {
 }
 
 .barra {
+    width: 110VW;
     height: 70pt;
     grid-column: 1/4;
     background-color: #FA78B6;
@@ -106,8 +112,9 @@ p {
 .p1 {
     background-image: url(../IMG/iniciofondo1.png);
     height: 40vh;
-    width: 100vw;
+    width: 110vw;
     margin-left: -15pt;
+    margin-top: 25pt;
     background-size: contain;
     position: relative;
     display: block;
@@ -213,6 +220,26 @@ p {
     bottom:250pt;
     text-align: right;
     color: #384059;
+}
+
+.vid_intro {
+    margin-top: -80pt;
+    margin-left: -30pt;
+    height: 40vh;
+    width: 110vw;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.pj_ini {
+    margin-top: -1500pt;
+    width: 100vw;
+    margin-left: -15pt;
+    height: 90vh;
+    display: flex;
+    position: relative;
+    z-index: 1;
 }
 
 .inicio p {
