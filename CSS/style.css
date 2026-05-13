@@ -44,6 +44,9 @@ body {
 
 #iniop {
     background-color: #FA78B6;
+    display: inline-flex;
+    
+    width: 100vw;
 }
 
 body {
@@ -535,6 +538,10 @@ footer img {
     border: solid 10px #9dc9ff;
 }
 
+#iniop {
+    background-color: #FA78B6;
+    display: inline-flex;
+}
 
 .rrss-ima {
     margin-left: 40pt;

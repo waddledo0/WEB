@@ -41,16 +41,30 @@ text-align: center;
     position: relative;
     text-align: left;
     top: 90pt;
-    z-index: 10;
+    z-index: 1;
     margin-bottom: 50pt;
     margin-left: 20pt;
 }
 
+.rs_txt {
+    color: gold;
+    text-align: left;
+    position: relative;
+    right: 35pt;
+}
+
+#red {
+    border: solid #384059 2pt;
+    background-color: white;
+}
+
 .prod-v img {
     width: 25vw;
+    margin-left: 15pt;
 }
 .prod-v video {
     width: 25vw;
+    margin-left: 15pt;
 }
 
 .minip a {
@@ -86,7 +100,7 @@ text-align: center;
 .banner-grande img {
     position: relative;
     width: 50px;
-    left: 35vw;
+    left: 70vw;
     top: -50pt
 }
 
@@ -97,18 +111,19 @@ text-align: center;
     text-align: left;
     align-content: center;
     padding: 20pt;
-    margin:55pt;
+    margin: 40pt;
     border: solid;
     border-width: 2pt;
     border-radius: 5%;
     margin-bottom: 50pt;
+    background-color: #def2ff;
 }
 
 .grande p{
     display: block;
     padding: 10px;
     position: relative;
-    bottom: 38vh;
+    bottom: 22vh;
     left: 27vw;
     text-align: left;
     width: 45%;
@@ -133,12 +148,16 @@ text-align: center;
     z-index: 2;
 }
 
+#vprod {
+    margin-top: -80vh;
+}
+
 .prod-v {
 position: relative;
 top: 1vh ;
-bottom: 80vh;
+bottom: 8vh;
 margin-top: 15pt;
-display: inline;
+display: inline-block;
 width: 22vw;
 height: 50vh;
 margin-left: 1pt;
@@ -164,7 +183,7 @@ margin-left: 1pt;
     position: relative;
     text-align: left;
     top: 0pt;
-    margin-bottom: 75pt;
+    margin-bottom: 7pt;
     text-align: center;
     
 }
@@ -176,6 +195,7 @@ margin-left: 1pt;
 .prod-v video {
     width: 10vw;
     border-radius: 10%;
+    margin-top: -35pt;
 }
 
     .banner-grande {
@@ -191,15 +211,26 @@ margin-left: 1pt;
 
     .grande {
     position: relative;
-    top: 100vh;
+    top: 170vh;
+    left: -85vw;
     width: 75vw;
     height: 60vh;
     text-align: left;
-    align-content: center;
     padding: 20pt;
     margin:5pt;
     margin-bottom: 50pt;
     border-width: 2pt;
     border-radius: 30pt;
 }
+
+.grande p {
+    display: block;
+    padding: 10px;
+    position: relative;
+    bottom: 40vh;
+    left: 15vw;
+    text-align: left;
+    width: 65%;
 }
+}
+
