@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="eng">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia</title>
+    <title>About us</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/aboutusfaq.css">
 </head>
 
 <body>
 
     <div class="barra">
-
-        <h1> Historia </h1>
+        <a href="aboutuseng.html"> <img class="btn-lang" src="IMG/switch-spaeng.png"> </a>
+        <h1> Sobre nosotros</h1>
 
     </div>
 
@@ -29,54 +30,64 @@
 
     <main class="inicio">
 
-<!-- HISTORIA -->
-        <article class="hist1">
-            <h1>Nuestra historia.</h1>
-            <p> Todo empieza en 2017 con nuestra primera sede en España, y de ahí nos expandimos por toda europa: Portugal, Francia, Alemania, Polonia y próximamente Italia. </p>
+        <!-- HISTORIA -->
+        <article class="hist1" id="about">
+            <h1>Sobre nosotros y novedades.</h1>
+            <p>En esta página puedes ver información general sobre nosotros y noticias / novedades que te podrían
+                interesar</p>
+            <p> ◆◇◆ </p>
+            <p> 17/3/2026: Por ahora todo el negocio está siendo manejado por mi mujer y yo. Pero en cuanto abramos
+                nuestro nuevo establecimiento en Elche, necesitaremos a más personas igual de talentosas y apasionadas
+                por el arte de las golocinas para mantenerlo. </p>
+            <p> ◆◇◆ </p>
+            <p> 15/5/2026: Nuevo producto por la temporada de verano: <a href="tienda.html">Soda Espacial</a> </p>
         </article>
 
-<!--PLACEHOLDER IMAGENES-->
-        <div
-            style="margin-top: -80pt; margin-left: -15pt; background-color: black; height: 80vh; width: 100vw; grid-column: 1/4; display: flex; position: relative; z-index: 1;">
-        </div>
+        <!-- FORM -->
 
-<!-- ROBBY SWEETY -->
-        <article class="hist2">
+        <aside class="formulario">
 
-            <h1> Robby y Sweety</h1>
+            <form method="get" class="formu">
 
-            <aside class="rby">
-                <img src="IMG/frrobby.png">
-                <p> Desde la madre Tierra hasta la Luna, Robby es un robot enviado para colonizar la vía láctea. Por un error de programación y una mala caída, su objetivo ha cambiado y su nueva pasión es el campo de los dulces i golosinas.</p>
+                <div class="bloque1">
+                    <div class="miniform">
+                        <label for="nom">
+                            <h2> Nombre y apellidos </h2>
+                        </label>
+                        <input type="text" name="nom">
+                    </div>
+                    <div class="miniform">
+                        <label for="mail">
+                            <h2> Correo electrónico</h2>
+                        </label>
+                        <input type="email" name="mail">
+                    </div>
 
-            </aside>
-
-            <aside class="sty">
-                <img src="IMG/frsweety.png">
-                <p> Viajante intraesstelar valiente y apasionada por la exploración y la clave a la felicidad. Al encontrar a Robby en su accidente, le ayudó a repararse y se aliaron para hacer los mejores caramelos de la galaxia.</p>
-
-            </aside>
-
-        </article>
-
-<!-- DUDAS -->
-        <!-- <article class="p4h">
-
-            <h1> ¿Tienes alguna duda? </h1>
-
-            <div class="dudash">
-                <div class="btn-dudas">
-                    <a href="aboutus.html">Sobre nosotros</a>
-                </div>
-                <div class="btn-dudas">
-                    <a href="faq.html">Preguntas frecuentes</a>
                 </div>
 
-            </div>
-        </article> -->
 
-<!-- FOOTER -->
-        <footer class="foot" >
+                <div class="bloque2">
+
+                    <div class="miniform">
+                        <label for="txt">
+                            <h2> Mensaje</h2>
+                        </label>
+                        <input class="texto" ztype="text" name="txt">
+                    </div>
+                    <div class="miniform" id="enviar">
+                        <input type="submit" name="env">
+                    </div>
+
+                    <img src="IMG/contacto-robby.png">
+
+                </div>
+            </form>
+
+        </aside>
+
+
+        <!-- FOOTER -->
+        <footer class="foot" id="footabus">
 
             <img src="../IMG/logomediano-black.png">
 
@@ -91,8 +102,7 @@
                     <h2>Redes sociales</h2>
                 </a>
             </div>
-<!-- PLACEHOLDER MAPA -->
-            <div style="background-color: #b5f5a9; width: 40vw; height: 25vh; margin-top: -20pt;"></div>
+
         </footer>
 
     </main>

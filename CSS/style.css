@@ -1,11 +1,24 @@
 body {
-    margin: 0%;
-    width: 100vw;
-    background-color: #E6FFFF;
-    margin-left: 20px;
-    margin-right: 20px;
+
+    background-color: #9dc9ff;
     font-family: Roundex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0%;
 }
+
+#inihist {
+    background-color: #9dc9ff;
+    height: 200vh;
+}
+
+@media screen and (min-width: 770px) {
+    #inihist {
+        background-color: #9dc9ff;
+        height: 200vh;
+    }
+}
+
 
 @font-face {
     font-family: "Route";
@@ -18,50 +31,6 @@ body {
     font-family: "Roundex";
     src: url(../FNT/Roundex.otf) format("opentype");
 }
-
-.opciones {
-    position: fixed;
-    display: flex;
-    left: 0%;
-    top: 50pt;
-    width: 120vw;
-    height: 6vh;
-    margin: 0%;
-    background-color: #9dc9ff;
-    z-index: 5;
-}
-
-.opciones a {
-    margin-left: 30pt;
-    margin-bottom: 10pt;
-    margin-top: 10pt;
-    color: #384059;
-}
-
-.opciones a:hover {
-    color: #E6FFFF;
-}
-
-#iniop {
-    background-color: #FA78B6;
-    display: inline-flex;
-    
-    width: 100vw;
-}
-
-body {
-    margin: 0%;
-    height: 500vh;
-}
-
-main {
-    width: 100vw;
-    margin-top: 10pt;
-    display: grid;
-    grid-template-columns: repeat(1fr, 1fr, 1fr, 1fr);
-    column-gap: 5px;
-}
-
 
 img {
     width: 100%;
@@ -93,156 +62,99 @@ p {
     font-size: 0.9rem;
 }
 
-.barra {
-    width: 110VW;
-    height: 70pt;
-    grid-column: 1/4;
+main {
+    margin-top: 10pt;
+    column-gap: 5px;
+}
+
+@media screen and (min-width: 770px) {
+    main {
+        margin: 0%;
+        width: 100vw;
+    }
+}
+
+.titulosab {
+    padding: 20pt;
+}
+
+#iniop {
     background-color: #FA78B6;
-    margin: -15pt;
+}
+
+.p1 {
+    width: 100vw;
+    background-image: url(../IMG/iniciofondo1.png);
+    position: relative;
+    top: 145pt;
+    height: 40vh;
+    z-index: 2;
+}
+
+@media screen and (min-width: 770px) {
+    .p1 {
+        background-image: url(../IMG/iniciofondo1.png);
+        position: relative;
+        top: 80pt;
+        height: 40vh;
+        z-index: 2;
+    }
+}
+
+.btn-lang {
+    width: 20vw;
+    position: absolute;
+    top: 3vh;
+    left: 75vw;
+    z-index: 4;
+}
+
+@media screen and (min-width: 770px) {
+    .btn-lang {
+        width: 10vw;
+        top: 5vh;
+        left: 88vw;
+    }
+}
+
+.btn-lang:hover {
+    transform: scale(1.09);
+}
+
+.barra {
+    margin: 0%;
+    height: 70pt;
+    width: 100%;
+    background-color: #FA78B6;
     position: fixed;
+    top: -10pt;
     z-index: 5;
+}
+
+@media screen and (min-width: 770px) {
+    .barra {
+        height: 75pt;
+        background-color: #FA78B6;
+        margin-top: -15pt;
+        position: fixed;
+        z-index: 5;
+    }
 }
 
 .barra h1 {
     position: relative;
     top: 10pt;
-    margin-left: 10%;
     text-align: left;
+    padding-left: 20pt;
 }
 
+@media screen and (min-width: 770px) {
 
-/* INICIO PÁGINAS  */
-.p1 {
-    background-image: url(../IMG/iniciofondo1.png);
-    height: 40vh;
-    width: 110vw;
-    margin-left: -15pt;
-    margin-top: 25pt;
-    background-size: contain;
-    position: relative;
-    display: block;
-    align-content: center;
-    z-index: 2;
-}
-.hist1 {
-    background-color: #bddcff;
-    height: 40vh;
-    width: 100vw;
-    margin-left: -10pt;
-    background-size: contain;
-    position: relative;
-    display: block;
-    align-content: center;
-    z-index: 2;
-}
-
-/* SEGUNDA PARTE PÁGINAS  */
-
-.p2 {
-    background-image: url(../IMG/iniciofondo2.png);
-    height: 75vh;
-    width: 100vw;
-    margin-left: -15pt;
-    margin-top: 0%;
-    background-size: contain;
-    position: relative;
-    z-index: 2;
-}
-.hist2 {
-    background-color: #9dc9ff;
-    height: 120vh;
-    width: 100vw;
-    margin-top: 40vh;
-    position: absolute;
-    display: block;
-    align-content: center;
-    z-index: 2;
-    
-}
-
-
-
-.rby {
-    background-color: #bddcff;
-    border-radius: 10pt;
-    background-blend-mode: screen;
-    position: relative;
-    margin: 15pt;
-    padding: 20pt;
-    padding-left: 10pt;
-    width: 65vw;
-    height: 40vh;
-}
-
-.rby img {
-    width: 225pt;
-    position: relative;
-    left: -30pt;
-    bottom: 5pt;
-
-}
-.sty {
-    background-color: #bddcff;
-    border-radius: 10pt;
-    background-blend-mode: screen;
-    position: relative;
-    left:25vw;
-    margin: 15pt;
-    padding: 20pt;
-    padding-left: 10pt;
-    width: 65vw;
-    height: 40vh;
-}
-
-.sty img {
-    width: 225pt;
-    position: relative;
-    right: -30vw;
-    bottom: 5pt;
-}
-
-
-/* TEXTOS */
-
-.rby p {
-    font-size: 0.9em;
-    z-index: 2;
-    width: 40%;
-    position: relative;
-    left: 120pt;
-    bottom: 250pt;
-    text-align: right;
-    color: #384059;
-}
-.sty p {
-    font-size: 0.9em;
-    z-index: 2;
-    width: 40%;
-    position: relative;
-    right: 30pt;
-    bottom:250pt;
-    text-align: right;
-    color: #384059;
-}
-
-.vid_intro {
-    margin-top: -80pt;
-    margin-left: -30pt;
-    height: 40vh;
-    width: 110vw;
-    display: flex;
-    position: relative;
-    z-index: 1;
-}
-
-.pj_ini {
-    margin-top: -1500pt;
-    width: 100vw;
-    margin-left: -15pt;
-    height: 90vh;
-    display: flex;
-    position: relative;
-    z-index: 1;
+    .barra h1 {
+        margin-top: 25pt;
+        margin-left: 25pt;
+        text-align: left;
+    }
 }
 
 .inicio p {
@@ -254,13 +166,107 @@ p {
 .p1 h1 {
     margin-top: -75pt;
 }
-.hist1 h1 {
-    margin-top: 50pt;
+
+.vid_intro {
+    width: 100vw;
+    position: relative;
+    top: 25px;
+    z-index: 2;
 }
 
-.p2 h1 {
-    margin-top: -100pt;
+@media screen and (min-width: 770px) {
 
+    .vid_intro {
+        width: 100vw;
+        position: relative;
+        top: 100px;
+        z-index: 1;
+    }
+
+    .p1 {
+        background-image: url(../IMG/iniciofondo1.png);
+        height: 40vh;
+        width: 100vw;
+        background-size: contain;
+        position: absolute;
+        display: block;
+        align-content: center;
+        z-index: 2;
+    }
+}
+
+.p2 {
+    background-image: url(../IMG/iniciofondo2.png);
+    padding-top: 10pt;
+    height: 90vh;
+    width: 100vw;
+    background-size: contain;
+    position: relative;
+    z-index: 2;
+
+}
+
+@media screen and (min-width: 770px) {
+
+    .p2 {
+        background-image: url(../IMG/iniciofondo2.png);
+        height: 100vh;
+        width: 100vw;
+        background-size: contain;
+        position: relative;
+        z-index: 2;
+    }
+
+}
+
+
+.post {
+    margin-left: 30pt;
+    left: 10vw;
+    width: 35vw;
+    background-color: #E6FFFF;
+    height: 40vh;
+    align-content: end;
+    padding-bottom: 30px;
+    box-shadow: 10px 10px 0px 1px #b91919;
+
+}
+
+.post h1 {
+    font-size: 1.3rem;
+}
+
+@media screen and (min-width: 770px) {
+    .post {
+        position: relative;
+        width: 30vw;
+        height: 290pt;
+    }
+
+    .post h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.rrss-ima {
+    margin-left: 10pt;
+    width: 30vw;
+    position: relative;
+}
+
+@media screen and (min-width: 770px) {
+    .rrss-ima {
+        margin-left: 60pt;
+        width: 20vw;
+        position: relative;
+    }
+}
+
+#nov2 {
+    position: absolute;
+    margin-left: 45vw;
+    background-image: url(../IMG/jawbreaker.png);
+    top: 70pt;
 }
 
 .post a {
@@ -268,47 +274,91 @@ p {
     margin: 0%;
     text-align: center;
     text-decoration: underline;
+    position: relative;
+    left: 7pt;
+    font-size: 15pt;
+    padding: 10pt;
+    padding-bottom: 5pt;
 }
-#nov2 a {
-    color: #FA78B6;
-    margin: 0%;
-    margin-left: 40pt;
-    text-align: left;
-    text-decoration: underline;
+
+@media screen and (min-width: 770px) {
+    .post a {
+        left: 10vw;
+    }
+}
+
+.post a:hover {
+    color: blue;
 }
 
 .post:hover {
     transform: scale(1.05);
 }
 
-.post a:hover {
-    color: blue;
-}
-#nov2 a:hover {
-    color: blue;
-}
-
-#nov2 {
-    width: 50vw;
-    left: 120pt;
-    top: 70pt;
-    background-image: url(../IMG/jawbreaker.png);
+.pj_ini {
+    width: 100vw;
+    top: -25vh;
+    display: flex;
+    position: relative;
+    z-index: 1;
 }
 
-.post h1 {
-    margin: 0%;
-    font-size: 15pt;
+@media screen and (min-width: 770px) {
+    .pj_ini {
+        top: -40vh;
+    }
+}
+
+.btn {
+    width: 20vw;
+    height: 11%;
+    background-color: #9dc9ff;
+    position: absolute;
+    align-content: center;
+    top: 82%;
+    left: 40%;
+    z-index: 3;
+    border-radius: 10px;
+}
+
+
+.btn h3 {
     text-align: center;
-    padding: 10pt;
-    padding-bottom: 5pt;
+    font-size: 1.2rem;
+    padding-bottom: -10px;
+    text-decoration: none;
 }
-#nov2 h1 {
-    margin: 0%;
-    margin-left: 30pt;
-    font-size: 15pt;
-    text-align: left;
-    padding: 10pt;
-    padding-bottom: 5pt;
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #b5f5a9;
+}
+
+@media screen and (min-width: 770px) {
+    .btn h3 {
+        text-align: center;
+        font-size: 1.2rem;
+        padding-bottom: 10px;
+        text-decoration: none;
+    }
+}
+
+.p4h {
+    background-color: #cff0ff;
+    height: 30vh;
+    width: 100vw;
+    position: relative;
+    top: -25vh;
+    display: block;
+    z-index: 3;
+    border: solid 10px #9dc9ff;
+}
+
+@media screen and (min-width: 770px) {
+    .p4h {
+        position: relative;
+        top: -40vh;
+    }
 }
 
 .btn-dudas a {
@@ -317,67 +367,57 @@ p {
     font-size: 15pt;
 }
 
+.opciones {
+    position: fixed;
+    display: flex;
+    left: 0%;
+    top: 50pt;
+    width: 120vw;
+    height: 6vh;
+    margin: 0%;
+    background-color: #9dc9ff;
+    z-index: 5;
+}
 
-.post {
+.opciones a {
     margin-left: 30pt;
-    position: sticky;
-    left: 10vw;
-    width: 40vw;
+    margin-bottom: 10pt;
+    margin-top: 10pt;
+    color: #384059;
+}
+
+.opciones a:hover {
+    color: #E6FFFF;
+}
+
+.dudash {
+    display: flex;
+    position: relative;
+    left: 50pt;
+}
+
+.btn-dudas {
+    width: 30vw;
+    text-align: center;
+    border: solid 3px #384059;
     background-color: #E6FFFF;
-    height: 180pt;
-    align-content: center;
-    box-shadow: 10px 10px 0px 1px #b91919;
-
-}
-#nov2 {
-    position: absolute;
-    margin-left: 40vw;
-    width: 25vw;
-    background-image: url(../IMG/jawbreaker.png);
-        background-size: contain;
+    padding: 20px;
+    margin-left: 8vw;
+    box-shadow: 10px 10px 0px 1px #9dc9ff;
 }
 
-#nov1 {
-    background-image: url(../IMG/post1.png);
-        background-size: contain;
-}
-
-.rrss-ima {
-    margin-left: 13pt;
-    width: 25vw;
-    height: 40pt;
-
-    position: relative;
-}
-
-
-/* FOOTER */
-
-.p4 {
-    background-color: #cff0ff;
-    height: 30vh;
-    width: 96vw;
-    margin-left: -21pt;
-    margin-top: 0%;
-    background-size: contain;
-    position: relative;
-    display: block;
-    align-content: center;
-    z-index: 2;
-    border: solid 10px #9dc9ff;
+.btn-dudas:hover {
+    transform: scale(1.05);
 }
 
 footer {
     padding: 20pt;
-    padding-top: 90pt;
+    padding-top: 100pt;
     background-color: #FA78B6;
     width: 100vw;
-    height: 100pt;
+    height: 60vh;
     position: relative;
-    left: -955pt;
-    display: flex;
-    margin-top: 130pt;
-
+    bottom: 150pt;
 }
 
 footer img {
@@ -387,8 +427,9 @@ footer img {
 }
 
 .ftr {
+    margin-top: 75pt;
     position: relative;
-    width: 100pt;
+    width: 70vw;
     height: 100pt;
 }
 
@@ -397,171 +438,13 @@ footer img {
     color: #384059;
 }
 
-
-.p4h {
-    background-color: #cff0ff;
-    height: 30vh;
-    width: 105vw;
-    margin-top: 1050pt;
-    margin-left: -6pt;
-    position: absolute;
-    display: block;
-    align-content: center;
-    z-index: 3;
-    border: solid 10px #9dc9ff;
-}
-
-.dudash {
-    display: flex;
-    position: relative;
-    left:50pt;
-}
-
-.btn-dudas {
-    width: 30vw;
-    text-align: center;
-    border: solid 3px #384059;
-    background-color: #E6FFFF;
-    padding: 20px;
-    margin-left: 15pt;
-    box-shadow: 10px 10px 0px 1px #9dc9ff;
-}
-
-.btn-dudas:hover {
-    transform: scale(1.05);
-}
-
-
-
-
-
-
-
-
 @media screen and (min-width: 770px) {
-
-    .post {
+    footer {
+        margin-top: -70pt;
         position: relative;
-        width: 200pt;
-        height: 250pt;
+        width: 100vw;
+        height: 35vh;
     }
-
-    .hist2 {
-        position: static;
-        top: 130pt;
-        margin: 0%;
-    }
-
-.p4h {
-    margin-top: 1200pt;
-}
-
-    body {
-    margin: 0%;
-    width: 100vw;
-    background-color: #E6FFFF;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-family: Roundex;
-}
-
-   main {  
-    margin: 0%;
-    margin-left: -20px;
-    width: 100vw;
-    margin-top: 10pt;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 5px;
-   }
-
-   .barra {
-    height: 50pt;
-    grid-column: 1/4;
-    background-color: #FA78B6;
-    margin: -15pt;
-    display: flexbox;
-    position: sticky;
-    top: 0px;
-    z-index: 5;
-}
-
-.barra h1 {
-    margin-top: -25pt;
-    margin-left: 8%;
-    text-align: left;
-}
-
-.barra img {
-    width: 4.5%;
-    margin-top: 10pt;
-    margin-left: 10pt;
-}
-
-.p1 {
-    background-image: url(../IMG/iniciofondo1.png);
-    height: 40vh;
-    width: 110vw;
-    margin-left: 10ptpt;
-    background-size: contain;
-    position: absolute;
-    display: block;
-    align-content: center;
-    z-index: 2;
-}
-
-.p2 {
-    background-image: url(../IMG/iniciofondo2.png);
-    height: 90vh;
-    width: 110vw;
-    margin-top: 0%;
-    background-size: contain;
-    position: absolute;
-    top: 400pt;
-    display: inline;
-    align-content: center;
-    z-index: 2;
-}
-
-.p4 {
-    background-color: #cff0ff;
-    height: 40vh;
-    width: 110vw;
-    margin-left: 21pt;
-    margin-top: 0%;
-    background-size: contain;
-    position: relative;
-    top: 1000pt;
-    display: block;
-    align-content: center;
-    z-index: 2;
-    border: solid 10px #9dc9ff;
-}
-
-#iniop {
-    background-color: #FA78B6;
-    display: inline-flex;
-}
-
-.rrss-ima {
-    margin-left: 40pt;
-    width: 150pt;
-    height: 150pt;
-    position: relative;
-}
-
-
-footer {
-    padding: 20pt;
-    padding-top: 90pt;
-    margin-left: 950pt;
-    background-color: #FA78B6;
-    width: 100vw;
-    height: 300pt;
-    position: absolute;
-    top: 1250pt;
-    display: flex;
-
 }
 
 footer img {
@@ -570,21 +453,265 @@ footer img {
     margin-top: -60pt;
 }
 
-.ftr {
-    position: relative;
-    top: 10vh;
-    margin-right: 10vw;
-    width: 40vw;
-    height: 45vh;
+#hi {
+    background-color: #9dc9ff;
 }
-   
-#ini {
-    margin-top: 730pt;
+
+.hist1 {
+    margin-top: 15vh;
+    background-color: #bddcff;
+    height: 65vh;
+    width: 100vw;
+    position: relative;
     z-index: 2;
 }
 
-#foot1 {
-    margin-top: -330pt;
+.hist1 h1 {
+    padding-top: 30pt;
 }
+
+@media screen and (min-width: 770px) {
+
+    .hist1 {
+        background-color: #bddcff;
+        height: 48vh;
+        width: 70vw;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.imahist {
+    left: 50vw;
+    top: -61vh;
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (min-width: 770px) {
+    .imahist {
+        width: 558pt;
+    }
+
+}
+
+@media screen and (min-width: 770px) and (max-width: 1087px) {
+
+    .imahist {
+        left: 30vw;
+        width: 558pt;
+    }
+
+    .hist1 {
+        position: S;
+        height: 60vh;
+        z-index: 3;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    .imahist {
+        display: none;
+    }
+
+}
+
+.hist1 a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.hist2 {
+    position: relative;
+    bottom: 30pt;
+    margin: 0%;
+    width: 100vw;
+    margin: 0%;
+    z-index: 2;
+    text-align: left;
+}
+
+@media screen and (min-width: 770px) {
+    .hist2 {
+        bottom: 400pt;
+        padding-top: 0%;
+        width: 100vw;
+        display: block;
+        z-index: 3;
+
+    }
+}
+
+
+.hist2 h1 {
+    position: relative;
+    margin: 0%;
+    margin-bottom: -100pt;
+}
+
+@media screen and (min-width: 770px) {
+    .hist2 div {
+        position: relative;
+        width: 100vw;
+        height: 120vh;
+        margin: 0%;
+    }
+
+    .hist2 h1 {
+        position: relative;
+        margin-top: 10vw;
+        z-index: 3;
+        padding: 0%;
+    }
+
+
+}
+
+.hist2 div {
+    position: absolute;
+    align-content: center;
+    width: 100vw;
+    margin: 0%;
+}
+
+
+
+.rby {
+    position: relative;
+    top: 150pt;
+    background-color: #bddcff;
+    border-radius: 10pt;
+    background-blend-mode: screen;
+    margin-left: 15pt;
+    padding: 20pt;
+    padding-left: 10pt;
+    width: 80vw;
+    height: 40vh;
+}
+
+@media screen and (min-width: 770px) {
+
+    .rby {
+        margin-left: 15pt;
+        background-color: #bddcff;
+        border-radius: 10pt;
+        background-blend-mode: screen;
+        margin: 15pt;
+        padding: 20pt;
+        padding-left: 10pt;
+        width: 40vw;
+        height: 45vh;
+    }
+
+}
+
+.rby p {
+    margin: 0%;
+    position: relative;
+    bottom: 30vh;
+    left: 45%;
+    width: 40%;
+}
+
+@media screen and (min-width: 770px) {
+    .rby p {
+        margin: 0%;
+        position: relative;
+        bottom: 20vh;
+        left: 45%;
+        width: 40%;
+    }
+
+}
+
+.rby img {
+    position: relative;
+    top: 20pt;
+    width: 45%;
+}
+
+.sty {
+    position: relative;
+    background-color: #bddcff;
+    border-radius: 10pt;
+    background-blend-mode: screen;
+    margin: 15pt;
+    margin-top: 250pt;
+    padding: 20pt;
+    padding-left: 10pt;
+    width: 80vw;
+    height: 40vh;
+}
+
+@media screen and (min-width: 770px) {
+
+    .sty {
+        bottom: 150pt;
+        left: 50vw;
+        background-color: #bddcff;
+        border-radius: 10pt;
+        background-blend-mode: screen;
+        margin: 15pt;
+        padding: 20pt;
+        padding-left: 10pt;
+        width: 40vw;
+        height: 45vh;
+    }
+
+}
+
+.sty p {
+    margin: 0%;
+    position: relative;
+    bottom: 30vh;
+    left: 45%;
+    width: 40%;
+}
+
+@media screen and (min-width: 770px) {
+    .sty p {
+        margin: 0%;
+        position: relative;
+        bottom: 20vh;
+        left: 45%;
+        width: 40%;
+    }
+
+}
+
+.sty img {
+    position: relative;
+    top: 20pt;
+    width: 45%;
+}
+
+#his {
+    position: relative;
+    top: 140vh;
+}
+
+@media screen and (min-width: 770px) {
+
+    #his {
+        position: relative;
+        top: 20vh;
+    }
+
+}
+
+#fhist {
+    position: relative;
+    bottom: -140vh;
+}
+
+
+@media screen and (min-width: 770px) {
+
+    #fhist {
+        position: relative;
+        bottom: -27vh;
+
+    }
 
 }
